@@ -1,5 +1,5 @@
 ---
-eip: 1
+sip: 1
 title: SIP Purpose and Guidelines
 status: Living
 type: Meta

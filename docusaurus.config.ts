@@ -43,6 +43,10 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    './index',
+  ],
+
   themeConfig: {
     image: 'img/social-card.jpg',
     navbar: {

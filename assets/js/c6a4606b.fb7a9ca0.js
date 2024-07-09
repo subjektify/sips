@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksips=self.webpackChunksips||[]).push([[761],{1379:(s,e,i)=>{i.r(e),i.d(e,{default:()=>r});var t=i(781),n=i(4848);function r(){return(0,n.jsx)(t.A,{title:"All",description:"Subjektify Improvement Proposals",children:(0,n.jsx)("main",{})})}}}]);

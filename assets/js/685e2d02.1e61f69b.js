@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksips=self.webpackChunksips||[]).push([[619],{4413:s=>{s.exports=JSON.parse('{"name":"index","id":"default"}')}}]);

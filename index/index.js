@@ -16,6 +16,7 @@ export default async function index(context, options) {
                 return {
                     id: data.sip,
                     author: data.author,
+                    created: new Date(data.created).toLocaleDateString(),
                     title: data.title,
                     status: data.status,
                     type: data.type,
@@ -26,31 +27,44 @@ export default async function index(context, options) {
 
         async contentLoaded({ content, actions }) {
             const { addRoute, createData } = actions;
+            const sipsConfig = {
+                core: 'Core',
+                interface: 'Interface',
+                informational: 'Informational',
+                meta: 'Meta',
+            }
 
             // Create the index json
             const sips = content;
-            const allSips = sips;
-            const metaSips = sips.filter(sip => sip.type === 'Meta');
 
-            // Create the JSON files
-            const allSipsJsonPath = await createData('sips.json', JSON.stringify(allSips));
-            const metaSipsJsonPath = await createData('sips.json', JSON.stringify(metaSips));
-            const sipsJsonPath = await createData('sips.json', JSON.stringify(sips));
+            // Create the JSON data
+            const sipsJsonData = await createData('sips.json', JSON.stringify(sips));
 
             // Add the index route for All SIPs
             addRoute({
                 path: '/all',
                 component: '@site/src/components/Sips',
                 modules: {
-                    sips: allSipsJsonPath,
+                    sips: sipsJsonData,
                 },
                 exact: true,
             });
+
+            // Add the index route for each SIP category
+            for (const [key, value] of Object.entries(sipsConfig)) {
+                await this.addSipCategory({ content, actions, key, value });
+            }
+        },
+
+        async addSipCategory({ content, actions, key, value }) {
+            const { addRoute, createData } = actions;
+            const sips = content.filter(sip => sip.type === value);
+            const sipsJsonData = await createData(`sips-${key}.json`, JSON.stringify(sips));
             addRoute({
-                path: '/meta',
+                path: `/${key}`,
                 component: '@site/src/components/Sips',
                 modules: {
-                    sips: metaSipsJsonPath,
+                    sips: sipsJsonData,
                 },
                 exact: true,
             });

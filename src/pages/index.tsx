@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -26,6 +27,7 @@ export default function Home(): JSX.Element {
       description="Subjektify Improvement Proposals">
       <HomepageHeader />
       <main>
+        <HomepageFeatures />
       </main>
     </Layout>
   );

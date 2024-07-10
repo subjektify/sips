@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import DocumentSvg from '@site/static/img/document.svg';
 
 type FeatureItem = {
   title: string;
@@ -41,7 +42,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -60,9 +61,7 @@ export default function HomepageFeatures(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+            <p>A SIP is a design document providing information to the Subjektify community, or describing a new feature for Subjektify or its processes or environment.</p>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 ---
 sip: 1
 title: SIP Purpose and Guidelines
-status: Living
+status: Draft
 type: Meta
 author: Mohamed Amer <mohamedamer@subjektify.dev>,
 created: 2024-07-09

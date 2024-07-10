@@ -1,6 +1,9 @@
 .features {
   display: flex;
   align-items: center;
+  margin-top: 0.5rem;
+  line-height: 1.8;
+  font-size: 2rem;
   padding: 2rem 0;
   width: 100%;
 }

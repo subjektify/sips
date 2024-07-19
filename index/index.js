@@ -30,6 +30,7 @@ export default async function index(context, options) {
             const sipsConfig = {
                 core: 'Core',
                 interface: 'Interface',
+                src: 'SRC',
                 informational: 'Informational',
                 meta: 'Meta',
             }

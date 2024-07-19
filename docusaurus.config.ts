@@ -59,6 +59,7 @@ const config: Config = {
         { to: 'all', label: 'All' },
         { to: 'core', label: 'Core' },
         { to: 'interface', label: 'Interface' },
+        { to: 'src', label: 'SRC' },
         { to: 'meta', label: 'Meta' },
         { to: 'informational', label: 'Informational' },
         {

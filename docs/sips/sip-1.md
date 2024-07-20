@@ -59,9 +59,28 @@ A SIP must meet certain minimum criteria. It must be a clear and complete descri
 
 Parties involved in the process are you, the champion or SIP author, the [SIP editors](#sip-editors), and the [Subjektify Core Developers](https://github.com/subjektify/pm).
 
+Before you begin writing a formal SIP, you should vet your idea. Ask the Subjektify community first if an idea is original to avoid wasting time on something that will be rejected based on prior research. Once the idea has been vetted, your next responsibility will be to present (by means of an SIP) the idea to the reviewers and all interested parties, invite editors, developers, and the community to give feedback.
+
+You should try and gauge whether the interest in your SIP is commensurate with both the work involved in implementing it and how many parties will have to conform to it. For example, the work required for implementing a Core SIP will be much greater than for an SRC and the SIP will need sufficient interest from the Subjektify core teams. Negative community feedback will be taken into consideration and may prevent your SIP from moving past the Draft stage.
+
 ### Core SIPs
 
+For Core SIPs, given that they require implementations to be considered Final (see “SIPs Process” below), you will need to either provide an implementation for clients or convince clients to implement your SIP.
+
+In short, your role as the champion is to write the SIP using the style and format described below, lead the discussions in the appropriate forums, and build community consensus around the idea.
+
 ### SIP Process
+
+The following is the standardization process for all SIPs in all tracks:
+
+- **Idea**: An idea that is pre-draft. This is not tracked within the SIP Repository.
+- **Draft**: The first formally tracked stage of an SIP in development. An SIP is merged by an SIP Editor into the SIP repository when properly formatted.
+- **Review**: A SIP Author marks an SIP as ready for and requesting Peer Review.
+- **Last Call**: This is the final review window for an SIP before moving to Final. An SIP editor will assign Last Call status and set a review end date, typically 14 days later.
+- **Final**: This SIP represents the final standard. A Final SIP exists in a state of finality and should only be updated to add non-normative clarifications.
+- **Stagnant**: Any SIP in `Draft` or `Review` or `Last Call` if inactive for a period of 6 months or greater is moved to Stagnant. An SIP may be resurrected from this state by Authors or SIP Editors through moving it back to Draft or it’s earlier status. If not resurrected, a proposal may stay forever in this status.
+- **Withdrawn**: The SIP Author(s) have withdrawn the proposed SIP. This state has finality and can no longer be resurrected using this SIP number. If the idea is pursued at a later date it is considered a new proposal.
+- **Living**: A special status for SIPs that are designed to be continually updated and not reach a state of finality. This includes most notably SIP-1.
 
 ##  What belongs in a successful SIP?
 

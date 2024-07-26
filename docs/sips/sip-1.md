@@ -84,13 +84,33 @@ The following is the standardization process for all SIPs in all tracks:
 - **Withdrawn**: The SIP Author(s) have withdrawn the proposed SIP. This state has finality and can no longer be resurrected using this SIP number. If the idea is pursued at a later date it is considered a new proposal.
 - **Living**: A special status for SIPs that are designed to be continually updated and not reach a state of finality. This includes most notably SIP-1.
 
-##  What belongs in a successful SIP?
+## What belongs in a successful SIP?
+
+Each SIP should have the following parts:
+
+- **Preamble**: RFC 822 style headers containing metadata about the SIP, including the SIP number, a short descriptive title (limited to a maximum of 44 characters), a description (limited to a maximum of 140 characters), and the author details. Irrespective of the category, the title and description should not include the SIP number. See below for details.
+- **Abstract**: A multi-sentence (short paragraph) technical summary. This should be a very terse and human-readable version of the specification section. Someone should be able to read only the abstract to get the gist of what this specification does.
+- **Motivation (optional)**: A motivation section is critical for SIPs that want to change the Subjektify protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the SIP solves. This section may be omitted if the motivation is evident.
+- **Specification**: The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Subjektify platforms.
+- **Rationale**: The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g., how the feature is supported in other languages. The rationale should discuss important objections or concerns raised during discussion around the SIP.
+- **Backwards Compatibility (optional)**: All SIPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their consequences. The SIP must explain how the author proposes to deal with these incompatibilities. This section may be omitted if the proposal does not introduce any backwards incompatibilities, but this section must be included if backward incompatibilities exist.
+- **Test Cases (optional)**: Test cases for an implementation are mandatory for SIPs that are affecting consensus changes. Tests should either be inlined in the SIP as data (such as input/expected output pairs) or included in `../assets/sip-###/<filename>`. This section may be omitted for non-Core proposals.
+- **Reference Implementation (optional)**: An optional section that contains a reference/example implementation that people can use to assist in understanding or implementing this specification. This section may be omitted for all SIPs.
+- **Security Considerations**: All SIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks, and can be used throughout the lifecycle of the proposal. E.g., include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. SIP submissions missing the "Security Considerations" section will be rejected. A SIP cannot proceed to status "Final" without a Security Considerations discussion deemed sufficient by the reviewers.
+- **Copyright Waiver**: All SIPs must be in the public domain. The copyright waiver MUST link to the license file and use the following wording: `Copyright and related rights waived via [CC0](https://github.com/subjektify/sips/blob/main/LICENSE).`
 
 ##  SIP Formats and Templates
 
+EIPs should be written in [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) format. There is a [template](/docs/sips/sip-template.md) to follow.
+
 ##  SIP Header Preamble
 
+Each EIP must begin with an RFC 822 style header preamble, preceded and followed by three hyphens (`---`). This header is also termed “front matter” by Jekyll. The headers must appear in the following order.
+
+
 ##  Linking to External Resources
+
+Other than the specific exceptions listed below, links to external resources SHOULD NOT be included. External resources may disappear, move, or change unexpectedly.
 
 
 ## SIP Editors

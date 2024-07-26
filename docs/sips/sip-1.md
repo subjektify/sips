@@ -73,6 +73,8 @@ In short, your role as the champion is to write the SIP using the style and form
 
 The following is the standardization process for all SIPs in all tracks:
 
+![SIP Process](/assets/sip-1/sip_process.svg)
+
 - **Idea**: An idea that is pre-draft. This is not tracked within the SIP Repository.
 - **Draft**: The first formally tracked stage of an SIP in development. An SIP is merged by an SIP Editor into the SIP repository when properly formatted.
 - **Review**: A SIP Author marks an SIP as ready for and requesting Peer Review.

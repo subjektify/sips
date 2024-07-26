@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksips=self.webpackChunksips||[]).push([[193],{5469:e=>{e.exports=JSON.parse('[{"id":1,"author":"Mohamed Amer <mohamedamer@subjektify.dev>,","created":"7/9/2024","title":"SIP Purpose and Guidelines","status":"Draft","type":"Meta"}]')}}]);
